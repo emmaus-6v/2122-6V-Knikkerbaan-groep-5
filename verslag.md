@@ -39,6 +39,8 @@ In de browser kan met een URL een widget worden geladen. Deze geeft de knikkerba
 
 ### week 44
 
+wij kunnen niet heel veel doen in verband met de toetsweek. wij gaan nadenken over eventuele ideeen die we later toe kunnen voegen. als we ergens tijd hebben proberen we te kijken of we al wat code kunnen maken voor de servo en de teller.
+
 ### week 45
 
 ### week ...
