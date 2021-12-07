@@ -37,7 +37,7 @@ void loop() {
 
     
     // bereken de nieuwe tijd waarop er weer met de server gecommuniceerd moet worden
-    tijdVoorcontactMetServer = millis() + (unsigned long)serverContactInterval * 1000;
+    tijdVoorContactMetServer = millis() + (unsigned long)serverContactInterval * 1000;
     // en zet nu het poortje weer open:
     poortBoven.open();
   }
