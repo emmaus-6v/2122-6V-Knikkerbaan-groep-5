@@ -4,7 +4,7 @@
 #include "Servo.h"
 
 
-class KnikkerPoort {
+class Knikker {
   private:
     Servo poortServo;
     int pin;
@@ -13,7 +13,7 @@ class KnikkerPoort {
     bool isOpen = false;
 
   public:
-    KnikkerPoort(){}
+    Knikker(){}
   
     void begin(int _pin, int _gradenOpen, int _gradenDicht) {
       pin = _pin;
