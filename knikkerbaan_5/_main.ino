@@ -12,8 +12,9 @@ unsigned long tijdVoorContactMetServer = 0;
 unsigned long contactTijd = 10;
 int Interval = 10;
 
-Servo myservo;
- 
+Servo myservo1;
+Servo myservo2;
+
 // Een variabele om de servo positie in te bewaren.
 int pos = 0;
 
@@ -27,8 +28,9 @@ void setup() {
   wifi.stuurVerzoek("/api/set/nieuwerun", "");
 
   // Configureer de DATA pin (stuur signaal)
-    myservo.attach(9);
-
+    myservo1.attach(9);
+    myservo2.attach(12);
+    
     poortBoven.open();
     poortOnder.open();
 }
@@ -97,6 +99,28 @@ void loop() {
     poortBoven.open();
     poortOnder.open();
 
-   
+    // Ga van 0 graden naar 180 graden in stapjes van 1 graad.
+    for(pos = 0; pos < 90; pos += 1) {
+        // Draai naar de opgegeven positie.
+        myservo1.write(pos); 
+        // Wacht 15 milliseconden zodat de servo kan draaien naar de positie.
+        delay(40);
+    }
+  
+    // Ga van 180 graden naar 0 graden in stapjes van 1 graad
+    for(pos = 90; pos>=1; pos-=1) {
+        // Draai naar de opgegeven positie.
+        myservo1.write(pos);
+        // Wacht 15 milliseconden zodat de servo kan draaien naar de positie.
+        delay(40);
+    }
+
+
+
+         // Ga van 0 graden naar 180 graden in stapjes van 1 graad.
+    for(pos = 0; pos < 90; pos +=2) {
+           // Draai naar de opgegeven positie.
+        myservo2.write(pos); 
+    }
   }
 }
