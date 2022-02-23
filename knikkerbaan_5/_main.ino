@@ -58,7 +58,9 @@ void loop() {
 
     // maak de reeks variabelen voor achter de URL:
     String data = "knikkers=";
-    data += tellerA.getAantal()& tellerB.getAantal();
+    data += tellerA.getAantal();
+    data += "&knikkersB=";
+    data += tellerB.getAantal();
 
     
     // als je meer waarden wilt toevoegen, ziet dat er zo uit:
@@ -104,7 +106,7 @@ void loop() {
         // Draai naar de opgegeven positie.
         myservo1.write(pos); 
         // Wacht 15 milliseconden zodat de servo kan draaien naar de positie.
-        delay(40);
+        delay(15);
     }
   
     // Ga van 180 graden naar 0 graden in stapjes van 1 graad
@@ -112,9 +114,8 @@ void loop() {
         // Draai naar de opgegeven positie.
         myservo1.write(pos);
         // Wacht 15 milliseconden zodat de servo kan draaien naar de positie.
-        delay(40);
+        delay(15);
     }
-
 
 
          // Ga van 0 graden naar 180 graden in stapjes van 1 graad.
