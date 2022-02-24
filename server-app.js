@@ -76,13 +76,20 @@ function setSensorData(request, response) {
 
 // geeft de laatst ingevoerde instellingen terug
 function getInstellingen(request, response) {
-  // moet nog gemaakt worden
+  var data = db.prepare("SELECT * FROM instellingen ORDER BY id DESC").get();
+  response.status(200).send(data);
 }
 
 
 // slaat doorgegeven instellingen op in de database
 function setInstellingen(request, response) {
-  // moet nog gemaakt worden
+    var huidigeRunID = geefHoogsteRunID();
+    var wachttijd = request.query.wachttijd;
+    var radBeginsnelheid = request.query.radBeginsnelheid;
+    var SQL = `INSERT INTO instellingen (run, stamp, wachttijdPoort, radBeginsnelheid)
+               VALUES (? , CURRENT_TIMESTAMP, ?, ?)`;
+    db.prepare(SQL).run(huidigeRunID, wachttijd, radBeginsnelheid);
+    response.status(200).send();
 }
 
 
@@ -92,3 +99,4 @@ function geefHoogsteRunID() {
   var data = db.prepare("SELECT max(id) as id FROM runs").get();
   return data.id;
 }
+
