@@ -1,5 +1,5 @@
 # Verslag eindopdracht 6V
-### gemaakt door *--leerling1--*, *--leerling2--*, *etc*
+### gemaakt door *--Lars Heeck--*, *--Floris den Hartog--*, *--Boris Vucenovic--*
 
 ---
 
@@ -51,13 +51,15 @@ wij zijn dit vergeten per week aan te geven, maar iedereen heeft er wel elke wee
 Geef hier bijvoorbeeld de volgene informatie, maar voel je vrij er informatie aan toe te voegen.
 
 De Arduino werkt op de volgende manier:
+de servo aan de bovenkant vangt de knikkers op na een bepaalde tijd gaat deze open. de sensor aan de bovenkant meet de knikkers voor de eerste keer. de volgende servo houd ze voor een geringe tijd tegen. daarna gaan de knikkers door naar het rad met de 360 graden servo waar de knikkers doorheen draaien. hierna gaan ze naar de trampoline van looms. als laatst meet de sensor hoeveel balletjes er weer uit komen.
 
 De knikkerbaan en de widget wisselen de volgende data met elkaar uit:
+het lukte ons helaas niet om de widget een connectie te geven met de knikkerbaan. als dit wel had gewerkt dan had de widget het aantal knikkers dat de sensoren hadden gemeten meegekregen. 
 
 We hebben dat op deze manier genormaliseerd in een database opgenomen (neem een strokendiagram op). De reden dat we voor ... kiezen is...
 
 Uitdagingen die we tegenkwamen:
-
+de SQL en de widget gaf ons de grootste probelemen, maar we hebben ook een hele tijd gexperimenteerd met het aantal volt dat de arduino nodig had. dit duurde wat langer dan gehoopt, maar voor de rest ging het redelijk soepel.
 
 ## Reflectie op opdracht
 #### --Lars Heeck--
