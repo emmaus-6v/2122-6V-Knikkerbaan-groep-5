@@ -44,7 +44,7 @@ wij kunnen niet heel veel doen in verband met de toetsweek. wij gaan nadenken ov
 ### week 45
 
 ### week ...
-
+wij zijn dit vergeten per week aan te geven, maar iedereen heeft er wel elke week wat aan gedaan en we hebben onderling afspraken gemaakt over de taakverdeling.
 
 
 ## Technische verantwoording
@@ -60,8 +60,8 @@ Uitdagingen die we tegenkwamen:
 
 
 ## Reflectie op opdracht
-#### --leerling1--
-*(50 - 100 woorden. Geef o.a. wat je tijdens deze opdracht beter onder de knie hebt gekregen en welk leerpunt je voor jezelf meeneemt)*
+#### --Lars Heeck--
+ik vond het een leuk project om aan te werken, omdat je bij dit project alles goed moest laten werken voordat de hele knikkerbaan werkte. dit was wel een uitdaging, maar ik vind uitdagingen juist wel leuk. de samenwerking was ook prima te doen en ik ben blij dat we uiteindelijk toch iets neer hebben kunnen zetten. er waren wel wat moelijkheden, maar die hebben we voor het overgrote deel opgelost met z'n allen.
 
 #### --leerling2--
 
